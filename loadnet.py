@@ -16,7 +16,7 @@ def toStr(v):
 def parseComp(comp):
     r = {}
     if comp[0] != "comp":
-        print "Parse comp error"
+        print("Parse comp error")
         return None
     for i in range(1, len(comp)):
         key = comp[i][0]
@@ -56,7 +56,7 @@ def loadNetFile(fileName):
             r[c['value'] + "&" + c['footprint']] = c
         return r
     except Exception as e:
-        print "Fail to load netlist:"
+        print("Fail to load netlist:")
         traceback.print_exc()
         return None
             
